@@ -7,12 +7,11 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (4.2.3)
-      i18n (~> 0.7)
-      json (~> 1.7, >= 1.7.7)
-      minitest (~> 5.1)
-      thread_safe (~> 0.3, >= 0.3.4)
-      tzinfo (~> 1.1)
+    activesupport (7.0.4.1)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 1.6, < 2)
+      minitest (>= 5.1)
+      tzinfo (~> 2.0)
     addressable (2.3.8)
     autoparse (0.3.3)
       addressable (>= 2.3.1)
@@ -23,6 +22,7 @@ GEM
       debugger-linecache (~> 1.2)
     coderay (1.1.0)
     columnize (0.8.9)
+    concurrent-ruby (1.1.10)
     debugger-linecache (1.2.0)
     extlib (0.9.16)
     faraday (0.9.1)
@@ -45,8 +45,8 @@ GEM
       memoist (~> 0.12)
       multi_json (= 1.11)
       signet (~> 0.6)
-    i18n (0.7.0)
-    json (1.8.3)
+    i18n (1.12.0)
+      concurrent-ruby (~> 1.0)
     jwt (1.5.1)
     launchy (2.4.3)
       addressable (~> 2.3)
@@ -75,9 +75,8 @@ GEM
       jwt (~> 1.5)
       multi_json (~> 1.10)
     slop (3.5.0)
-    thread_safe (0.3.5)
-    tzinfo (1.2.2)
-      thread_safe (~> 0.1)
+    tzinfo (2.0.5)
+      concurrent-ruby (~> 1.0)
 
 PLATFORMS
   ruby
